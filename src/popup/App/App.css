@@ -1,0 +1,59 @@
+:root {
+  --primary-background-color: linear-gradient(to right, #0a1c53 1%, #253875 100%);
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --tr-odd-color: #e0fbff;
+  --tr-even-color: #f1fdff;
+  --button-background-color: #0a1c53;
+  --button-text-color: #ffffff;
+
+  --font-family: "ProximaNova", sans-serif;
+
+  --default-layout-width: 1150px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-rendering: optimizespeed;
+  color: var(--text-color);
+  overflow-y: overlay;
+}
+
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button,
+/* input, */
+[tabindex] {
+  outline: none;
+  border: none;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
